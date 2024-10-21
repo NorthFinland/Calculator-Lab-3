@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.CalculatorLab3" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Define global theme properties here if needed -->
+    </style>
+
+    <!-- Main application theme with custom button style -->
+    <style name="Theme.CalculatorLab3" parent="Base.Theme.CalculatorLab3">
+        <!-- Apply custom button style globally -->
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <!-- Custom Button Style -->
+    <style name="CustomButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:textColor">#FF000000</item> <!-- Black text color -->
+        <item name="android:background">#d8bfbb</item> <!-- Custom background color -->
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+</resources>
