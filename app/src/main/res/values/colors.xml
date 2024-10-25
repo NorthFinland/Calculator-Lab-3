@@ -2,6 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="button_text">#FF000000</color>
-    <color name="button_background">#80250f</color>
+    <color name="button_text">#23365c</color>
+
+    <color name="button_background">#d8b8af</color>
+    <color name="button_background_pressed">#FFB300</color>
+
+    <color name="layout_background">#3d4061</color>
+    <color name="text_background">#21274a</color>
+    <color name="button_equal_background">#b81e1e</color>
+    <color name="buttons_not_numbers_text">#d8b8af</color>
+    <color name="button_ce_c_background">#1f2130</color>
 </resources>
