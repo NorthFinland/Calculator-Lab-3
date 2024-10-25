@@ -4,15 +4,17 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-    android:background="@color/layout_background">
+    android:background="@color/layout_background"
+    android:id="@+id/main">
 
     <TextView
+        android:id="@+id/displayTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_weight="2"
         android:gravity="center|right"
-        android:textColor="#000000"
+        android:textColor="#FFFFFFFF"
         android:textSize="30sp"
         android:background="@color/button_ce_c_background"/>
 
@@ -34,7 +36,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:tag="MC"/>
 
         <Button
             android:id="@+id/buttonMR"
@@ -45,7 +48,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="MR"/>
 
         <Button
             android:id="@+id/buttonMS"
@@ -56,7 +60,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="MS"/>
 
         <Button
             android:id="@+id/buttonMemoryAdd"
@@ -67,7 +72,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="MemoryAdd"/>
 
         <Button
             android:id="@+id/buttonMemorySubtract"
@@ -78,7 +84,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="MemorySubtract"/>
 
     </LinearLayout>
     <!-- Row 2 -->
@@ -99,7 +106,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_ce_c_background"
             android:textColor="@color/buttons_not_numbers_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="BackspaceDelete"/>
 
         <Button
             android:id="@+id/buttonClearEntry"
@@ -110,7 +118,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_ce_c_background"
             android:textColor="@color/buttons_not_numbers_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="ClearEntry"/>
 
         <Button
             android:id="@+id/buttonClear"
@@ -121,7 +130,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_ce_c_background"
             android:textColor="@color/buttons_not_numbers_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="Clear"/>
 
         <Button
             android:id="@+id/buttonSignChange"
@@ -132,7 +142,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="SignChange"/>
 
         <Button
             android:id="@+id/buttonSquareRoot"
@@ -143,7 +154,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="SquareRoot"/>
 
     </LinearLayout>
 
@@ -165,7 +177,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="7"/>
 
         <Button
             android:id="@+id/button8"
@@ -176,7 +189,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="8"/>
 
         <Button
             android:id="@+id/button9"
@@ -187,7 +201,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="9"/>
 
         <Button
             android:id="@+id/buttonDivision"
@@ -198,7 +213,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="Division"/>
 
         <Button
             android:id="@+id/buttonPercentage"
@@ -209,7 +225,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="Percentage"/>
 
     </LinearLayout>
 
@@ -230,7 +247,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="4"/>
 
         <Button
             android:id="@+id/button5"
@@ -241,7 +259,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="5"/>
 
         <Button
             android:id="@+id/button6"
@@ -252,7 +271,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="6"/>
 
         <Button
             android:id="@+id/buttonMultiplication"
@@ -263,7 +283,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="Multiplication"/>
 
         <Button
             android:id="@+id/buttonReciprocal"
@@ -274,7 +295,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_background"
             android:textColor="@color/button_text"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:tag="Reciprocal"/>
     </LinearLayout>
 
     <LinearLayout
@@ -306,7 +328,8 @@
                     android:text="@string/button_1"
                     android:backgroundTint="@color/button_background"
                     android:textColor="@color/button_text"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:tag="1"/>
 
                 <Button
                     android:id="@+id/button2"
@@ -317,7 +340,8 @@
                     android:text="@string/button_2"
                     android:backgroundTint="@color/button_background"
                     android:textColor="@color/button_text"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:tag="2"/>
             </LinearLayout>
 
             <LinearLayout
@@ -336,7 +360,8 @@
                     android:text="@string/button_0"
                     android:backgroundTint="@color/button_background"
                     android:textColor="@color/button_text"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:tag="0"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -374,7 +399,8 @@
                             android:onClick="onButtonClick"
                             android:backgroundTint="@color/button_background"
                             android:textColor="@color/button_text"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:tag="3"/>
 
                         <Button
                             android:id="@+id/buttonSubtraction"
@@ -385,7 +411,8 @@
                             android:onClick="onButtonClick"
                             android:backgroundTint="@color/button_background"
                             android:textColor="@color/button_text"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:tag="Subtraction"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -404,7 +431,8 @@
                             android:text="@string/button_dot"
                             android:backgroundTint="@color/button_ce_c_background"
                             android:textColor="@color/buttons_not_numbers_text"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:tag="Dot"/>
                         <Button
                             android:id="@+id/buttonAddition"
                             android:layout_width="match_parent"
@@ -414,7 +442,8 @@
                             android:text="@string/button_addition"
                             android:backgroundTint="@color/button_background"
                             android:textColor="@color/button_text"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:tag="Addition"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -433,8 +462,10 @@
                         android:text="@string/button_equals"
                         android:backgroundTint="@color/button_equal_background"
                         android:textColor="@color/buttons_not_numbers_text"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:tag="Equals"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+</LinearLayout>
 </LinearLayout>
